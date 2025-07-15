@@ -18,7 +18,7 @@ const gameData = {
     },
     "3": {
         "text": "The sprites all meet up but for some reason their flight gets cancelled.OH NO! But the conference is in two days?! What should we do?",
-        "image" : "smaller_images/aiport.png",
+        "image" : "smaller_images/airport.png",
 "choices": {
             "phone a friend, ask an alum/auntie/uncle": [4, ["MooMoo", "Tzu Bear"]],
             "cry": [4,["Mr. Prickles", "Cardi O."]],
@@ -86,7 +86,7 @@ const gameData = {
     "11" :{
         "text" : "By the magical power of the dog you and the squad are now transported to Houston. \
                   How do you celebrate?",
-        "image" : "smaller_images/homepage.png",
+        "image" : "smaller_images/grocery_bag.png",
 "choices": {
                     "food": [0, ["Tzu Bear"]],
                     "A k-pop dance cover performance": [0, ["Blaze", "Mr. Prickles","Cardi O."]],
