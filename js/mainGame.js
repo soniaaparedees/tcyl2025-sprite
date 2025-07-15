@@ -86,7 +86,7 @@ const gameData = {
     "11" :{
         "text" : "By the magical power of the dog you and the squad are now transported to Houston. \
                   How do you celebrate?",
-        "image" : "smaller_images/homepage2.png",
+        "image" : "smaller_images/homepage.png",
 "choices": {
                     "food": [0, ["Tzu Bear"]],
                     "A k-pop dance cover performance": [0, ["Blaze", "Mr. Prickles","Cardi O."]],
