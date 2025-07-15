@@ -190,8 +190,9 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
     
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Drumroll... you are ...";
         text.appendChild(img);
+        text.textContent = "(Right click or hold the image to save)";
 
         // Share button functionality
         shareButton.onclick = () => {
