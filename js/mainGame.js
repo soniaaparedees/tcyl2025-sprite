@@ -8,7 +8,7 @@ const gameData = {
     },
     "2": {
         "text": "Okay, so I have my TC stuff, my ID, my phone, wallet, keys...hmmm am I missing anything?",
-        "image" : "smaller_images/1.png",
+        "image" : "smaller_images/packing.png",
 "choices": {
             "snacks": [3,["Tzu Bear"]],
             "first aid kit": [3,["Cardi O.", "Bo D. Sattva"]],
@@ -18,7 +18,7 @@ const gameData = {
     },
     "3": {
         "text": "The sprites all meet up but for some reason their flight gets cancelled.OH NO! But the conference is in two days?! What should we do?",
-        "image" : "smaller_images/2.png",
+        "image" : "smaller_images/aiport.png",
 "choices": {
             "phone a friend, ask an alum/auntie/uncle": [4, ["MooMoo", "Tzu Bear"]],
             "cry": [4,["Mr. Prickles", "Cardi O."]],
@@ -28,7 +28,7 @@ const gameData = {
     },
     "4": {
         "text": "It starts to downpour and a small river forms. The sprites and mascots are all washed away!! Dewy can't swim! But there are some trees around us. How do we get to them?",
-        "image" : "smaller_images/3.png",
+        "image" : "smaller_images/river.png",
 "choices": {
             "parkour up the trees": [5,["Mr. Prickles"]],
             "Give everyone a jetpack that you packed in your bag.": [5,["Tzu Bear", "Cardi O."]],
@@ -38,7 +38,7 @@ const gameData = {
     },
     "5": {
         "text": "A magnificent bird swoops in, offering everyone a ride. The rain starts to make Blaze lose some of their flame. How do we help them?",
-        "image" : "smaller_images/4.png",
+        "image" : "smaller_images/bird.png",
 "choices": {
             "Try to offer cover from the rain": [7,["Bo D. Sattva", "MooMoo", "Mr. Prickles"]],
             "Offer words of encouragement, to keep Blaze's inner light going": [7,["Blaze"]],
@@ -48,14 +48,14 @@ const gameData = {
     },
     "7": {
         "text": "They come across a field of balloons. Spike is terrified!",
-        "image" : "smaller_images/7.png",
+        "image" : "smaller_images/balloons.png",
 "choices": {
             "Continue": [8,[]]
         }
     },
     "8": {
         "text": "How would you console Spike?",
-        "image" : "smaller_images/7.png",   
+        "image" : "smaller_images/bird.png",   
 "choices": {
             "Tell them we can grow by facing our fears": [9,["MooMoo", "Blaze"]],
             "Suggest we can find another route": [9,["Dewy"]],
@@ -68,7 +68,7 @@ const gameData = {
                 There's so much yummy vegetarian food and toys and games! \
                 Suddenly, the squad comes across a lost, crying dog.\
                 HOW SHALL WE PROCEED? WHAT IS THE DEED?",
-        "image" : "smaller_images/6.png",
+        "image" : "smaller_images/festival.png",
 "choices": {
             "Offer some of your food to the dog": [10, ["Tzu Bear", "Cardi O."]],
             "Distracts the dog by making goofy faces to stop it from crying": [10, ["Blaze", "Mr. Prickles"]],
@@ -86,7 +86,7 @@ const gameData = {
     "11" :{
         "text" : "By the magical power of the dog you and the squad are now transported to Houston. \
                   How do you celebrate?",
-        "image" : "smaller_images/breaking_window.png",
+        "image" : "smaller_images/homepage2.png",
 "choices": {
                     "food": [0, ["Tzu Bear"]],
                     "A k-pop dance cover performance": [0, ["Blaze", "Mr. Prickles","Cardi O."]],
