@@ -55,7 +55,7 @@ const gameData = {
     },
     "8": {
         "text": "How would you console Spike?",
-        "image" : "smaller_images/bird.png",   
+        "image" : "smaller_images/cloudy.png",   
 "choices": {
             "Tell them we can grow by facing our fears": [9,["MooMoo", "Blaze"]],
             "Suggest we can find another route": [9,["Dewy"]],
@@ -97,19 +97,7 @@ const gameData = {
 
 };
 const personalities = { 
-    "Onion": 0,
-    "Broccoli": 0,
-    "Garlic": 0, // The Leader
-    "Jalapeno": 0, // The Adventurer
-    "Tomato": 0, // The Analyst
-    "Green Bean": 0, // The Connector
-    "Pumpkin": 0, // The Caregiver
-    "Carrot": 0, // The Visionary
-    "Potato": 0, // The Realist
-    "Napa Cabbage": 0, // The Harmonizer
-    "Bok Choy": 0, // The Performer
-    "Leek": 0, // The Investigator
-    "Tzu Bear": 0, // The Investigator
+    "Tzu Bear": 0,
     "Cardi O." : 0, 
     "Bo D. Sattva" : 0,
     "Blaze" : 0,
