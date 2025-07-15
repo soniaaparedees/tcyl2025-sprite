@@ -1,24 +1,24 @@
 const gameData = {
     "1": {
-        "text": "The TCYL Sprites and Mascots are on a mission to get to Houston and make it in time for the 2025 National TCYL Humanitarian Leadership Conference.",
+        "text": "The TCYL Sprites and Mascots are on a mission to get to Houston to make it in time for 2025 US TCYL Humanitarian Leadership Conference.",
         "image" : "smaller_images/beach_disaster.png",
 "choices": {
             "Continue": [2,[]]
         }
     },
     "2": {
-        "text": "Okay so I have my TC stuff, my ID, my phone, wallet, keys, hmmm am I missing anything?",
-        "image" : "smaller_images/snackies.png",
+        "text": "Okay, so I have my TC stuff, my ID, my phone, wallet, keys...hmmm am I missing anything?",
+        "image" : "smaller_images/1.png",
 "choices": {
             "snacks": [3,["Tzu Bear"]],
             "first aid kit": [3,["Cardi O.", "Bo D. Sattva"]],
-            "an extra shirt, can never have too many": [3,["MooMoo", "Dewy"]],
+            "an extra shirt, can never have too little": [3,["MooMoo", "Dewy"]],
             "I'm not missing anything!": [3, ["Blaze", "Mr. Prickles"]]
         }
     },
     "3": {
         "text": "The sprites all meet up but for some reason their flight gets cancelled.OH NO! But the conference is in two days?! What should we do?",
-        "image" : "smaller_images/where_to.png",
+        "image" : "smaller_images/2.png",
 "choices": {
             "phone a friend, ask an alum/auntie/uncle": [4, ["MooMoo", "Tzu Bear"]],
             "cry": [4,["Mr. Prickles", "Cardi O."]],
@@ -28,7 +28,7 @@ const gameData = {
     },
     "4": {
         "text": "It starts to downpour and a small river forms. The sprites and mascots are all washed away!! Dewy can't swim! But there are some trees around us. How do we get to them?",
-        "image" : "smaller_images/at_beach.png",
+        "image" : "smaller_images/3.png",
 "choices": {
             "parkour up the trees": [5,["Mr. Prickles"]],
             "Give everyone a jetpack that you packed in your bag.": [5,["Tzu Bear", "Cardi O."]],
@@ -38,7 +38,7 @@ const gameData = {
     },
     "5": {
         "text": "A magnificent bird swoops in, offering everyone a ride. The rain starts to make Blaze lose some of their flame. How do we help them?",
-        "image" : "smaller_images/having_beach_fun.png",
+        "image" : "smaller_images/4.png",
 "choices": {
             "Try to offer cover from the rain": [7,["Bo D. Sattva", "MooMoo", "Mr. Prickles"]],
             "Offer words of encouragement, to keep Blaze's inner light going": [7,["Blaze"]],
@@ -48,14 +48,14 @@ const gameData = {
     },
     "7": {
         "text": "They come across a field of balloons. Spike is terrified!",
-        "image" : "smaller_images/beach_disaster.png",
+        "image" : "smaller_images/7.png",
 "choices": {
             "Continue": [8,[]]
         }
     },
     "8": {
         "text": "How would you console Spike?",
-        "image" : "smaller_images/in_pantry.png",   
+        "image" : "smaller_images/7.png",   
 "choices": {
             "Tell them we can grow by facing our fears": [9,["MooMoo", "Blaze"]],
             "Suggest we can find another route": [9,["Dewy"]],
@@ -68,7 +68,7 @@ const gameData = {
                 There's so much yummy vegetarian food and toys and games! \
                 Suddenly, the squad comes across a lost, crying dog.\
                 HOW SHALL WE PROCEED? WHAT IS THE DEED?",
-        "image" : "smaller_images/window_locked.png",
+        "image" : "smaller_images/6.png",
 "choices": {
             "Offer some of your food to the dog": [10, ["Tzu Bear", "Cardi O."]],
             "Distracts the dog by making goofy faces to stop it from crying": [10, ["Blaze", "Mr. Prickles"]],
