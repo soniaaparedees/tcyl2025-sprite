@@ -1,6 +1,6 @@
 const gameData = {
     "1": {
-        "text": "The TCYL Sprites and Mascots are on a mission to get to Houston to make it in time for 2025 US TCYL Humanitarian Leadership Conference.",
+        "text": "The TCYL Sprites and Mascots are on a mission to get to Houston to make it in time for the 2025 US TCYL Humanitarian Leadership Conference.",
         "image" : "smaller_images/holding_hands.png",
 "choices": {
             "Continue": [2,[]]
@@ -74,7 +74,7 @@ const gameData = {
     },
     "10": {
         "text": "HOW SHALL WE PROCEED? WHAT IS THE DEED?",
-        "image" : "smaller_images/eyebrows-wink.gif",
+        "image" : "smaller_images/lost_dog.png",
 "choices": {
             "Offer some of your food to the dog": [11, ["Tzu Bear", "Cardi O."]],
             "Distract the dog by making goofy faces to stop it from crying": [11, ["Blaze", "Mr. Prickles"]],
@@ -92,7 +92,7 @@ const gameData = {
     "12" :{
         "text" : "By the magical power of the dog you and the squad are now transported to Houston. \
                   How do you celebrate?",
-        "image" : "smaller_images/holding_hands.png",
+        "image" : "smaller_images/houston_tc.png",
 "choices": {
             "food": [13, ["Tzu Bear"]],
             "A k-pop dance cover performance": [13, ["Blaze", "Mr. Prickles","Cardi O."]],
