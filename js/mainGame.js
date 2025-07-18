@@ -183,7 +183,7 @@ function revealMostSelectedVegetable() {
 
     // Create Save button
     const saveButton = document.createElement('button');
-    saveButton.textContent = 'Save your image!';
+    saveButton.textContent = 'Save your image';
     saveButton.className = 'final-button';
 
     // Create the share button
@@ -193,14 +193,14 @@ function revealMostSelectedVegetable() {
 
      // Create the restart button
     const restartButton = document.createElement('button');
-    restartButton.textContent = 'Play again!';
+    restartButton.textContent = 'Play again :)';
     restartButton.className = 'final-button';
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
         storyImage.style.display = 'none';
         choicesContainer.innerHTML = '';
-        shareButton.style.margin = '20px auto';      
+        shareButton.style.margin = '10px auto';      
     
         text.textContent = "You are .....";
         text.appendChild(img);
@@ -220,7 +220,7 @@ function revealMostSelectedVegetable() {
         shareButton.onclick = () => {
             const shareMessage = `https://soniaaparedees.github.io/tcyl2025-sprite/`;
             navigator.clipboard.writeText(shareMessage).then(() => {
-                alert('Link copied to clipboard! Thanks for playing! Enjoy the conference!');
+                alert('Link copied to clipboard! Thanks for playing. Enjoy the conference :)');
             }).catch(err => {
                 alert('Failed to copy link. Please try again.');
             });
