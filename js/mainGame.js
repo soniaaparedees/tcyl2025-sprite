@@ -207,15 +207,25 @@ function revealMostSelectedVegetable() {
 
         // Save image functionality
         saveButton.onclick = () => {
-            const imageDataURL = canvas.toDataURL('image/png'); // corrected MIME type
+            const imageDataURL = canvas.toDataURL(`smaller_images/id_cards/${maxVeggie}.png`); // corrected MIME type
+            
+            // Create a temporary anchor element
             const a = document.createElement('a');
             a.href = imageDataURL;
             a.download = 'image.png';
-            document.body.appendChild(a); // required for Firefox
-            a.click();
-            document.body.removeChild(a); // cleanup
+
+            // For iOS Safari: open in new tab if download not supported
+            if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+                // iOS doesn't support download attribute well
+                window.open(imageDataURL, '_blank');
+            } else {
+                // Trigger the download
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
         };
-        
+
         // Share button functionality
         shareButton.onclick = () => {
             const shareMessage = `https://soniaaparedees.github.io/tcyl2025-sprite/`;
