@@ -37,8 +37,15 @@ const gameData = {
         }
     },
     "5": {
-        "text": "A magnificent bird swoops in, offering everyone a ride. The rain starts to make Blaze lose some of their flame. How do we help them?",
+        "text": "A magnificent bird swoops in, offering everyone a ride.",
         "image" : "smaller_images/bird.png",
+"choices": {
+            "Continue": [6,[]]
+        }
+    },
+    "6": {
+        "text": "But the rain starts to make Blaze lose some of their flame. How do we help them?",
+        "image" : "smaller_images/cloudy.png",
 "choices": {
             "Try to offer cover from the rain": [7,["Bo D. Sattva", "MooMoo", "Mr. Prickles"]],
             "Offer words of encouragement, to keep Blaze's inner light going": [7,["Blaze"]],
@@ -47,15 +54,8 @@ const gameData = {
         }
     },
     "7": {
-        "text": "They come across a field of balloons. Spike is terrified!",
+        "text": "They come across a field of balloons. Spike is terrified! How would you console Spike?",
         "image" : "smaller_images/balloons.png",
-"choices": {
-            "Continue": [8,[]]
-        }
-    },
-    "8": {
-        "text": "How would you console Spike?",
-        "image" : "smaller_images/cloudy.png",   
 "choices": {
             "Tell them we can grow by facing our fears": [9,["MooMoo", "Blaze"]],
             "Suggest we can find another route": [9,["Dewy"]],
@@ -183,7 +183,7 @@ function revealMostSelectedVegetable() {
 
     // Create the share button
     const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share the game with Friends';
+    shareButton.textContent = 'Share the game with Friends or refresh page to restart!';
     shareButton.className = 'choice-button';
 
     // Once the image is loaded, update the DOM
@@ -196,7 +196,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://soniaaparedees.github.io/tcyl2025-sprite/`;
+            const shareMessage = `Thanks for playing! Enjoy the conference! https://soniaaparedees.github.io/tcyl2025-sprite/`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
