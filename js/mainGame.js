@@ -181,6 +181,11 @@ function revealMostSelectedVegetable() {
     img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
+    // Create Save button
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save your image!';
+    saveButton.className = 'final-button';
+
     // Create the share button
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share the game with Friends!';
@@ -197,8 +202,19 @@ function revealMostSelectedVegetable() {
         choicesContainer.innerHTML = '';
         shareButton.style.margin = '20px auto';      
     
-        text.textContent = "You are ............ (Right click or hold the image to save)";
+        text.textContent = "You are .....";
         text.appendChild(img);
+    
+        // Add buttons in the right order
+        text.appendChild(saveButton);
+        text.appendChild(shareButton);
+        text.appendChild(restartButton);
+
+        // Save button functionality
+        saveButton.onclick = () => {
+            const imageUrl = veggieImagePath; // Replace with the actual image URL
+            window.open(imageUrl, '_blank');
+    };
 
         // Share button functionality
         shareButton.onclick = () => {
@@ -214,9 +230,6 @@ function revealMostSelectedVegetable() {
         restartButton.onclick = () => {
             location.reload(true);
         };
-
-        text.appendChild(shareButton);
-        text.appendChild(restartButton);
     };
 }
 
