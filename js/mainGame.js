@@ -181,30 +181,57 @@ function revealMostSelectedVegetable() {
     img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
+    // Create the save button
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save your character!';
+    saveButton.className = 'final-button';
+
     // Create the share button
     const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share the game with Friends or refresh page to restart!';
-    shareButton.className = 'choice-button';
+    shareButton.textContent = 'Share the game with Friends!';
+    shareButton.className = 'final-button';
+
+     // Create the restart button
+    const restartButton = document.createElement('button');
+    restartButton.textContent = 'Play again!';
+    restartButton.className = 'final-button';
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
         storyImage.style.display = 'none';
-        choicesContainer.style.display = 'none';
+        choicesContainer.innerHTML = '';
+        shareButton.style.margin = '20px auto';      
     
-        text.textContent = "(Right click or hold the image to save)       You are ..... ";
+        text.textContent = " You are .....        \n (Right click or hold the image to save)";
         text.appendChild(img);
+
+        // Save image functionality
+        saveButton.onclick = () => {
+            window.open(canvas.toDataURL(veggieImagePath));
+            var gh = canvas.toDataURL('png');
+            var a  = document.createElement('a');
+            a.href = gh;
+            a.download = 'image.png';
+        };
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Thanks for playing! Enjoy the conference! https://soniaaparedees.github.io/tcyl2025-sprite/`;
+            const shareMessage = `https://soniaaparedees.github.io/tcyl2025-sprite/`;
             navigator.clipboard.writeText(shareMessage).then(() => {
-                alert('Link copied to clipboard!');
+                alert('Link copied to clipboard! Thanks for playing! Enjoy the conference!');
             }).catch(err => {
                 alert('Failed to copy link. Please try again.');
             });
         };
 
+        // Restart button functionality
+        restartButton.onclick = () => {
+            location.reload(true);
+        };
+
+        text.appendChild(saveButton);
         text.appendChild(shareButton);
+        text.appendChild(restartButton);
     };
 }
 

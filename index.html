@@ -65,12 +65,11 @@
         }
  
         .choices {
-        
-        display: flex;
-        flex-direction: column; /* Arrange buttons in a column */
-        align-items: center; /* Center the buttons horizontally */
-        gap: 10px; /* Space between the buttons */
-        margin-top: 2rem; /* Space above the choices container */
+            display: flex;
+            flex-direction: column; /* Arrange buttons in a column */
+            align-items: center; /* Center the buttons horizontally */
+            gap: 10px; /* Space between the buttons */
+            margin-top: 2rem; /* Space above the choices container */
         }
 
         .choice-button {
@@ -81,14 +80,37 @@
             background-color: #bee69a; /* White background */
             cursor: pointer; /* Pointer cursor on hover */
             transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+            flex-direction: column; /* Arrange buttons in a column */
+            align-items: center; /* Center the buttons horizontally */
+            display: flex;
+        }
+
+        .final-button {
+            font-family: 'Jost';
+            font-size: 18px; /* Adjust font size to be smaller */
+            padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
+            border: 0.5px solid #bee69a; /* Solid border */
+            background-color: #bee69a; /* White background */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+            display: block;
+            flex-direction: column; /* Arrange buttons in a column */
+            gap: 20px; /* Space between the buttons */
+            margin: 20px auto;
         }
 
         @media (hover: hover) {
             .choice-button:hover {
                 background-color: #a4dc71; /* Slightly darker background on hover */
             }
+            .final-button:hover {
+                background-color: #a4dc71; /* Slightly darker background on hover */
+            }
         }
         .choice-button:focus {
+            background-color: #fff; /* Slightly darker background on hover */
+        }
+        .final-button:focus {
             background-color: #fff; /* Slightly darker background on hover */
         }
         .story-text {
@@ -117,7 +139,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">2025 US TCYL Humanitarian Leadership Conference<br><strong style="font-size:2em">Which TC Sprite / Mascot Are You?</strong></div> 
+        <div class="title">2025 US TCYL Humanitarian Leadership Conference<br><strong style="font-size:1.25em">Which TC Sprite / Mascot Are You?</strong></div> 
         <img id="homescreen" style="padding-bottom: 15px" src="smaller_images/homepage2.png" alt="Story Image"/>
         <a href="#" class="start-button" onclick="startGame()">Start</a>
         
