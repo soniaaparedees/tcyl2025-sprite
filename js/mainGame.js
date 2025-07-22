@@ -146,6 +146,34 @@ function renderState(state) {
 }
 
 
+function renderResult(state) {
+    const storyText = document.getElementById('story-text');
+    const storyImage = document.getElementById('story-image');
+    const choicesContainer = document.getElementById('choices');
+
+    const img = new Image();
+    img.src = gameData[state].image;
+
+    img.onload = () => {
+        storyImage.src = img.src;
+        storyText.textContent = gameData[state].text;
+        choicesContainer.innerHTML = '';
+
+        
+        setTimeout(() => {
+            for (const [choice, info] of Object.entries(gameData[state].choices)) {
+            const button = document.createElement('button');
+            button.textContent = choice;
+            button.className = 'choice-button';
+            let nextState = info[0];
+            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities 
+            choicesContainer.appendChild(button);
+
+        } } , 1400);
+    
+    };
+}
+
 function changeState(newState, selectedPersonalities) { 
     // console.log(personalities); 
     selectedPersonalities.forEach(personality => {
@@ -156,7 +184,10 @@ function changeState(newState, selectedPersonalities) {
 
     if (currentState === 0) {
         revealMostSelectedVegetable();
-    } else {
+    } else if (currentState == 13) {
+        renderResult(currentState)
+    }
+    else {
         renderState(currentState);
     }
 }
